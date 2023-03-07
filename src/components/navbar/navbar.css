@@ -1,0 +1,97 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navContainer {
+    display: flex;
+    justify-content: center;
+}
+.navContainerBox {
+    display: flex;
+    width: 97%;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+}
+.navContainerBox img {
+    width: 106px;
+    object-fit: cover;
+}
+.navContainerBoxItem ul{
+    display: flex;
+}
+.navContainerBoxItem ul li {
+    list-style: none;
+    margin-right: 21px;
+    font-size: 20px;
+    color: #35637a;
+    font-weight: 600;
+}
+.MobileNavContainerBoxItem{
+    display: none;
+}
+.MenuSliderContainerBlock{
+    display: none;
+}
+.MenuSliderContainerNone{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: #35637a;
+    cursor: pointer;
+}
+
+
+/* -------------------Media Queries--------------
+------------------------------------------------- */
+@media(max-width:769px){
+    .navContainerBoxItem{
+        display: none;
+    }
+    .spanMenuContainer{
+        position: relative;
+    }
+    .MobileNavContainerBoxItem{
+        display:block ;
+    }
+    #hamburgerMenuIcon{
+    }
+    .MobileNavContainerBoxItem1{
+
+    }
+    .MobileNavContainerBoxItemPeace{
+
+    }
+    .MuiDrawer-paperAnchorTop{
+        top: 75px !important;
+    }
+    .MenuSliderContainerNone{
+        display: none;
+    }
+    .MenuSliderContainerBlock {
+        display: block;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 65px;
+        width: 100%;
+        background-color: white;
+        z-index: 5;
+        box-shadow: 0px 15px 31px 3px #efefef;
+    }
+    .MenuSliderContainerBox ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 0;
+    }
+    .MenuSliderContainerBox ul li {
+        list-style: none;
+        text-align: start;
+        color: #35637a;
+        margin: 10px;
+        font-weight: 600;
+        font-size: 17px;
+    }
+}

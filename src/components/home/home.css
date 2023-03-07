@@ -1,0 +1,33 @@
+.secondNavContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #35637a;
+    padding: 15px 0;
+    color: white;
+}
+.secondNavContainerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.secondNavContainerBox1{
+    width: 70%;
+}
+
+
+/* -----------Media Queries-------
+---------------------------------- */
+@media (max-width:769px) {
+    .secondNavContainerBox2 Button{
+        font-size: 11px
+    }
+    .secondNavContainerBox {
+        width: 95%;
+    }
+    .secondNavContainerBox1 {
+        font-size: 14px;
+    }
+}
+ 
