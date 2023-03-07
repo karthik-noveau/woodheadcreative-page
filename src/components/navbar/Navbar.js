@@ -3,7 +3,7 @@ import { Sling as Hamburger } from 'hamburger-react'
 //-----css----
 import './navbar.css'
 //----image---
-import logo from '../../images/logo.webp'
+import logo from '../../images/logo.png'
 function Navbar() {
 
     const [isOpen, setOpen] = useState(false)

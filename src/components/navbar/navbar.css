@@ -13,7 +13,7 @@ body{
     justify-content: space-between;
 }
 .navContainerBox img {
-    width: 106px;
+    width: 110px;
     object-fit: cover;
 }
 .navContainerBoxItem ul{
