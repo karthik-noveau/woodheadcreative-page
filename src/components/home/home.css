@@ -206,5 +206,17 @@
         top: 31%;
         left: 39%;
     }
+    .headingText22 {
+        font-size: 11px !important;
+        margin-top: 7px;
+    }
+    .headingText33, .headingText44 {
+        padding-top: 15px;
+        font-size: 16px;
+    }
+    .headingText {
+        margin-top: 7px;
+    }
+
 
 }
