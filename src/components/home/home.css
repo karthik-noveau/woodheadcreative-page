@@ -20,7 +20,8 @@
 
 .homeBannerContainer img {
     width: 100%;
-    box-shadow: 0 0 51px 0 #ececec;
+    /* box-shadow: 0 0 51px 0 #ececec; */
+    box-shadow: 0 0 51px 0 #684545;
     border-radius: 13px;
 }
 
