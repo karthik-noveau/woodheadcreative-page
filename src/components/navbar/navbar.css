@@ -13,7 +13,7 @@ body{
     justify-content: space-between;
 }
 .navContainerBox img {
-    width: 110px;
+    width: 140px;
     object-fit: cover;
 }
 .navContainerBoxItem ul{
@@ -45,6 +45,9 @@ a{
 /* -------------------Media Queries--------------
 ------------------------------------------------- */
 @media(max-width:769px){
+    .navContainerBox img {
+        width: 110px;
+    }
     .navContainerBoxItem{
         display: none;
     }
@@ -77,7 +80,7 @@ a{
         width: 100%;
         background-color: white;
         z-index: 5;
-        box-shadow: 0px 20px 50px 0px #efefef;
+        box-shadow: 0px 70px 48px -59px #efefef;
     }
     .MenuSliderContainerBox ul {
         display: flex;
