@@ -1,0 +1,68 @@
+.footerHolder{
+    background-color: #35637a;
+}
+.newsletterContainer {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    /* flex-direction: column; */
+    width: 100%;
+}
+.newsletterBox {
+    display: flex;
+    /* height: 46px; */
+    /* align-items: flex-start; */
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+.newsletterBox Button {
+    color: white !important;
+    margin-left: 10px;
+    width: 160px;
+}
+.newsletterBox input {
+    border-radius: 5px;
+    border: none;
+    padding-left: 15px;
+    width: 100%;
+    height: 49px;
+    font-size: 17px;
+}
+.newsletterBox input:focus{
+    outline:none;
+}
+.newsletterBoxItem {
+    display: flex;
+}
+.newsletterBox label {
+    color: white;
+    font-size: 20px;
+    margin: 13px 0px;
+}
+.footerAddrContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+ 
+}
+.footerAddrContainerBox{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    color: white;
+}
+.rightsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.rightsContainer p {
+    border-top: 1px solid #d9d9d9;
+    text-align: center;
+    color: white;
+    width: 90%;
+    margin-top: 30px;
+    padding: 20px 0;
+}

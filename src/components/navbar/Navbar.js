@@ -22,7 +22,8 @@ function Navbar() {
                             <li><a href='#home'>HOME</a></li>
                             <li><a href='#services'>SERVICES</a></li>
                             <li><a href='#clients'>CLIENTS</a></li>
-                            <li><a href='#contact-us'>CONTACT US</a></li>
+                            <li><a href='#test'>TESTIMONIALS</a></li>
+                            <li><a href='#contact'>CONTACT US</a></li>
                         </ul>
                     </div>
                     <div className='MobileNavContainerBoxItem'>
@@ -41,7 +42,8 @@ function Navbar() {
                         <li><a href='#home'>HOME</a></li>
                         <li><a href='#services'>SERVICES</a></li>
                         <li><a href='#clients'>CLIENTS</a></li>
-                        <li><a href='#contact-us'>CONTACT US</a></li>
+                        <li><a href='#test'>TESTIMONIALS</a></li>
+                        <li><a href='#contact'>CONTACT US</a></li>
                     </ul>
                 </div>
             </div>

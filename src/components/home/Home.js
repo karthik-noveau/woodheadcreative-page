@@ -20,6 +20,7 @@ import Mclient1 from '../../images/Mclient1.jpg'
 import collab from '../../images/collab.jpg'
 import Mcollab from '../../images/Mcollab.jpg'
 import offer from '../../images/offer.jpg'
+import Moffer from '../../images/Moffer.jpg'
 //-----testimonials-----
 import test1 from '../../images/testimonials/test1.jpg'
 //------MUI------
@@ -28,9 +29,10 @@ import Slider from '../slider/Slider';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation"; 
+import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Footer from '../footer/Footer';
 
 
 
@@ -42,15 +44,15 @@ function Home() {
             <section className='secondNavContainer'>
                 <div className='secondNavContainerBox'>
                     <marquee direction="right" className='secondNavContainerBox1'>
-                        orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500
+                        Does your business need more leads or better branding? Avail our offer.
                     </marquee>
                     <div className='secondNavContainerBox2'>
-                        <Button variant="contained" style={{ backgroundColor: " #b37402" }}>CLICK HERE</Button>
+                        <a href="#offer"> <Button variant="contained" style={{ backgroundColor: " #b37402" }}>CLICK HERE</Button></a>
                     </div>
                 </div>
             </section>
             <section className='HomeHolder'>
-                <div className='HomeImgContainer' >
+                <div id="home" className='HomeImgContainer HomeBannerImgContainer' >
                     <img src={HBanner} />
                     <img src={MHBanner} />
                 </div>
@@ -89,7 +91,7 @@ function Home() {
                     <img src={transformational} />
                     <img src={Mtransformational} />
                 </div>
-                <div className='MainTitleContainer'>
+                <div className='MainTitleContainer' id="services">
                     <h3>SERVICES</h3>
                 </div>
                 <div className='serviceContainer'>
@@ -113,7 +115,7 @@ function Home() {
 
                     </div>
                 </div>
-                <div className='MainTitleContainer'>
+                <div className='MainTitleContainer' id="clients">
                     <h3>CLIENTS</h3>
                 </div>
                 <div className='clientImgContanier' >
@@ -131,33 +133,35 @@ function Home() {
                     <img src={transformational} />
                     <img src={Mtransformational} />
                 </div>
-                <div className='HomeImgContainer' >
+                <div className='HomeImgContainer offerWithButtonContainer' id="offer" >
                     <img src={offer} />
-                    <img src={offer} />
+                    <img src={Moffer} />
+                    <a href='#contact'>  <Button style={{ backgroundColor: "#35637a" }}>CONTACT US</Button></a>
                 </div>
-                <div className='MainTitleContainer'>
+                <div className='MainTitleContainer' id="test">
                     <h3>TESTIMONIAL SECTION</h3>
                 </div>
                 <div className='SwiperJSContainer'>
-            <Swiper
-                spaceBetween={30}
-                centeredSlides={true}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
-                pagination={{
-                    clickable: true,
-                }}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
-                className="mySwiper"
-            >
-                <SwiperSlide><img className="sliderImage" src={test1}/></SwiperSlide>
-               
-            </Swiper>
-        </div>
+                    <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        navigation={true}
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide><img className="sliderImage" src={test1} /></SwiperSlide>
+
+                    </Swiper>
+                </div>
             </section>
+            <Footer />
         </div>
     )
 }
