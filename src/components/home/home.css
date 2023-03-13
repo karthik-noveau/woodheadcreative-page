@@ -337,18 +337,5 @@
         font-size: 14px;
         width: 100% !important;
     }
-    .newsletterBox {
-        width: 90%;
-    }
-    .newsletterBox input {
-        height: 36px;
-        font-size: 15px;
-    }
-    .footerAddrContainerBox {
-        width: 90%;
-    }
-    .newsletterContainer {
-        padding: 32px 0;
-    }
-
+ 
 }
