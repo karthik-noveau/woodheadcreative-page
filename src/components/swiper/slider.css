@@ -1,0 +1,95 @@
+.SwiperJSContainer .DImg,
+.SwiperJSContainer .MImg {
+    width: 100%;
+}
+
+.SwiperJSContainer .MImg {
+    display: none;
+}
+
+/* --------- pagination bullet color --------- */
+.swiper-pagination-bullet-active {
+    background-color: #35637a !important;
+}
+
+/*---------- arrow color and size---------- */
+
+.SwiperJSContainer .swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    color: #35637a;
+    font-size: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.SwiperJSContainer .swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    color: #35637a;
+    font-size: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/*---------- arrow with cricle---------- */
+
+/* .SwiperJSContainer .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: #35637a;
+    padding: 7px 8px 7px 7px;
+    width: 28px;
+    height: 15px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.SwiperJSContainer .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: #35637a;
+    padding: 7px 7px 7px 8px;
+    width: 28px;
+    height: 15px;
+    border-radius: 50%;
+    font-weight: bold;
+} */
+@media (max-width:769px) {
+
+    /*---------- arrow color and size---------- */
+
+    .SwiperJSContainer .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+        content: 'prev';
+        color: #35637a;
+        font-size:28px;
+        border-radius: 50%;
+        font-weight: bold;
+    }
+
+    .SwiperJSContainer .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+        content: 'next';
+        color: #35637a;
+        font-size:28px;
+        border-radius: 50%;
+        font-weight: bold;
+    }
+
+    .SwiperJSContainer .DImg {
+        display: none;
+    }
+
+    .SwiperJSContainer .MImg {
+        display: block;
+    }
+}

@@ -1,8 +1,7 @@
 import React from 'react'
 import Navbar from '../navbar/Navbar';
-import data from './ServiceData'
-//------css------
-import './home.css'
+import data from '../data/ServiceData'
+import ImgData from '../data/ImgData'
 //------img------
 import HBanner from '../../images/HBanner.gif'
 import MHBanner from '../../images/MHBanner.gif'
@@ -21,11 +20,11 @@ import collab from '../../images/collab.jpg'
 import Mcollab from '../../images/Mcollab.jpg'
 import offer from '../../images/offer.jpg'
 import Moffer from '../../images/Moffer.jpg'
-//-----testimonials-----
-import test1 from '../../images/testimonials/test1.jpg'
+//------css------
+import './home.css'
 //------MUI------
 import Button from '@mui/material/Button';
-import Slider from '../slider/Slider';
+import Slider from '../swiper/Slider';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -33,7 +32,6 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Footer from '../footer/Footer';
-
 
 
 
@@ -130,8 +128,8 @@ function Home() {
                     <h3>OUR COLLABORATIVE PARTNERS</h3>
                 </div>
                 <div className='HomeImgContainer' >
-                    <img src={transformational} />
-                    <img src={Mtransformational} />
+                    <img src={collab} />
+                    <img src={Mcollab} />
                 </div>
                 <div className='HomeImgContainer offerWithButtonContainer' id="offer" >
                     <img src={offer} />
@@ -141,26 +139,9 @@ function Home() {
                 <div className='MainTitleContainer' id="test">
                     <h3>TESTIMONIAL SECTION</h3>
                 </div>
-                <div className='SwiperJSContainer'>
-                    <Swiper
-                        spaceBetween={30}
-                        centeredSlides={true}
-                        autoplay={{
-                            delay: 2500,
-                            disableOnInteraction: false,
-                        }}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        navigation={true}
-                        modules={[Autoplay, Pagination, Navigation]}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide><img className="sliderImage" src={test1} /></SwiperSlide>
-
-                    </Swiper>
-                </div>
+               
             </section>
+            <Slider ImgData={ImgData}/>
             <Footer />
         </div>
     )
