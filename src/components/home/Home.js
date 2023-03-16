@@ -112,9 +112,10 @@ function Home() {
                             })
                         }
 
-                        <span id="clients"></span>
+                       
                     </div>
                 </div>
+                <span id="clients"></span>
                 <div className='MainTitleContainer' >
                     <h3>CLIENTS</h3>
                 </div>
