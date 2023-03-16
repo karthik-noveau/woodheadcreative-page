@@ -159,11 +159,19 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.serviceContainerBoxItem {
+/* .serviceContainerBoxItem {
     width: 326px;
     text-align: center;
     margin: 42px;
     box-shadow: 0 0 27px 0px #b37402c7;
+    padding: 29px 20px;
+    border-radius: 10px;
+} */
+.serviceContainerBoxItem {
+    width: 326px;
+    text-align: center;
+    margin: 42px;
+    box-shadow: 0 0 40px 0px #b3740252;
     padding: 29px 20px;
     border-radius: 10px;
 }
