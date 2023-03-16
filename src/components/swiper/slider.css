@@ -1,3 +1,4 @@
+/* ---------image--------- */
 .SwiperJSContainer .DImg,
 .SwiperJSContainer .MImg {
     width: 100%;
@@ -6,6 +7,47 @@
 .SwiperJSContainer .MImg {
     display: none;
 }
+
+
+/* ------text------- */
+.SwiperJSContainer {
+    position: relative;
+}
+
+.SliderTextConatainer {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 50px;
+    width: 50%;
+}
+
+.SliderTextConatainerBox {
+    height: 200px;
+    overflow: auto;
+}
+
+.SliderTextConatainerBox p {
+    font-size: 15px;
+    margin-bottom: 9px;
+}
+
+.SliderIconConatainer {
+    margin-top: 14px;
+    display: flex;
+    font-size: 21px;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.SliderIconConatainer a {
+    color: #35637a;
+}
+
+.SliderIconConatainer a:first-child {
+    margin-right: 15px;
+}
+
 
 /* --------- pagination bullet color --------- */
 .swiper-pagination-bullet-active {
@@ -65,13 +107,35 @@
 } */
 @media (max-width:769px) {
 
+    /* ------text------- */
+    .SliderTextConatainerBox {
+        height: 120px;
+        overflow: auto;
+    }
+    .SliderTextConatainerBox p {
+        font-size: 9px;
+        margin-bottom: 5px;
+    }
+    .SliderTextConatainer {
+        right: 30px;
+        width: 45%;
+    }
+    .SliderIconConatainer {
+        margin-top: 11px;
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .SliderIconConatainer a:first-child {
+        margin-right: 7px;
+    }
+
     /*---------- arrow color and size---------- */
 
     .SwiperJSContainer .swiper-button-prev:after,
     .swiper-rtl .swiper-button-next:after {
         content: 'prev';
         color: #35637a;
-        font-size:28px;
+        font-size: 20px;
         border-radius: 50%;
         font-weight: bold;
     }
@@ -80,7 +144,7 @@
     .swiper-rtl .swiper-button-prev:after {
         content: 'next';
         color: #35637a;
-        font-size:28px;
+        font-size: 20px;
         border-radius: 50%;
         font-weight: bold;
     }

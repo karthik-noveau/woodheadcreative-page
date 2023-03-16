@@ -31,7 +31,7 @@ const data = [
     },
     {
         img: serviceIcon5,
-        title:"Design &amp; Video Production",
+        title:"Design Video Production",
         text1: "Our creative studio specializes in graphic design and video production.Our highly experienced creative team handles all forms of graphic design, and video and animation related production services.",
         text2:"Video Editing - White board animation - Explainer Videos - Motion Posters - Animations - 2D &amp; 3D Animation - Marketing Videos - Social Media Videos - VFXs - Poster Design - Magazine Design - Brochure Design - Newsletters Design - Coffee table books design - Logo design - Short film &amp; Music video editing - Video Production (Storyboarding, pre production, shoot &amp; post production ) - Ad films - Corporate films"
     },

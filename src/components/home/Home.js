@@ -20,6 +20,8 @@ import collab from '../../images/collab.jpg'
 import Mcollab from '../../images/Mcollab.jpg'
 import offer from '../../images/offer.jpg'
 import Moffer from '../../images/Moffer.jpg'
+//------pdf-----
+import pdf from '../../images/pdf/WHC_Deck.pdf'
 //------css------
 import './home.css'
 //------MUI------
@@ -41,11 +43,11 @@ function Home() {
             <Navbar />
             <section className='secondNavContainer'>
                 <div className='secondNavContainerBox'>
-                    <marquee direction="right" className='secondNavContainerBox1'>
+                    <marquee direction="left" className='secondNavContainerBox1'>
                         Does your business need more leads or better branding? Avail our offer.
                     </marquee>
                     <div className='secondNavContainerBox2'>
-                        <a href="#offer"> <Button variant="contained" style={{ backgroundColor: " #b37402" }}>CLICK HERE</Button></a>
+                        <a href="#test"> <Button variant="contained" style={{ backgroundColor: " #b37402" }}>CLICK HERE</Button></a>
                     </div>
                 </div>
             </section>
@@ -136,12 +138,22 @@ function Home() {
                     <img src={Moffer} />
                     <a href='#contact'>  <Button style={{ backgroundColor: "#35637a" }}>CONTACT US</Button></a>
                 </div>
+                <section className='secondNavDownContainer'>
+                    <div className='secondNavDownContainerBox'>
+                        <marquee direction="left" className='secondNavDownContainerBox1'>
+                        Know more about our collective here....
+                        </marquee>
+                        <div className='secondNavDownContainerBox2'>
+                            <a  href="https://firebasestorage.googleapis.com/v0/b/woodheadcreative-c81ba.appspot.com/o/WHC_Deck.pdf?alt=media&token=601b995b-2b02-48a9-9e85-e72115300913" download > <Button variant="contained" style={{ backgroundColor: " #b37402" }}>DOWNLOAD</Button></a>
+                        </div>
+                    </div>
+                </section>
                 <div className='MainTitleContainer' id="test">
                     <h3>TESTIMONIAL SECTION</h3>
                 </div>
-               
+
             </section>
-            <Slider ImgData={ImgData}/>
+            <Slider ImgData={ImgData} />
             <Footer />
         </div>
     )

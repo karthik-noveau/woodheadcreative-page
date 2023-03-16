@@ -8,45 +8,51 @@ import "swiper/css/navigation";
 import './slider.css'
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+//icons
+import { GiEarthAmerica } from 'react-icons/gi'
+import { FiLinkedin } from 'react-icons/fi'
+
 
 export default function Slider(props) {
-  const imgObj = Object.values(props.ImgData[0].img)
-  // let testArr = []
-  // let MTestArr = []
-  // for (let i = 0; i < imgObj.length; i++) {
 
-  //   testArr.push(imgObj[i].test)
-  //   MTestArr.push(imgObj[i].Mtest)
-  // }
-
-  console.log(
-    imgObj.map((item, index) =>{
-       return imgObj[index].test
-    })
-  )
 
   return (
     <>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
-        pagination={{
-          clickable: true,
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
         }}
+       
         navigation={true}
-        modules={[  Pagination, Navigation]}
+        modules={[Autoplay,Navigation]}
         className="SwiperJSContainer"
       >
         {
-          imgObj.map((item, index) => {
+          props.ImgData.map((item, index) => {
             return (
               <SwiperSlide>
-                <img key={index} src={imgObj[index].test} className="DImg" />
-                <img key={index} src={imgObj[index].Mtest} className="MImg" />
+                {/* ----images---- */}
+                <img key={index} src={item.test} className="DImg" />
+                <img key={index} src={item.Mtest} className="MImg" />
+                {/* -----text inside the image ---- */}
+                <div className="SliderTextConatainer">
+                  <div className="SliderTextConatainerBox" >
+                    <p>{item.text1}</p>
+                    <p>{item.text2}</p>
+                    <p>{item.text3}</p>
+                    <p>{item.text4}</p>
+                    <p>{item.text5}</p>
+                    <p>{item.position} : {item.name}</p>
+                    <p>{item.web}</p>
+                  </div>
+                  <div className="SliderIconConatainer" >
+                    <a href={item.Linkedin}><GiEarthAmerica /></a>
+                    <a href={item.webLink}><FiLinkedin /></a>
+                  </div>
+                </div>
               </SwiperSlide>
             )
           })

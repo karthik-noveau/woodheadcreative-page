@@ -2,6 +2,11 @@ import { Button } from '@mui/material'
 import React from 'react'
 //-----css----
 import './footer.css'
+//-----icons-----
+import {FiInstagram} from 'react-icons/fi'
+import {TfiTwitter} from 'react-icons/tfi'
+import {FiLinkedin }from 'react-icons/fi'
+import {ImFacebook2} from 'react-icons/im'
 
 function Footer() {
     return (
@@ -20,12 +25,24 @@ function Footer() {
                 </div>
                 <div className='footerAddrContainer'>
                     <div className='footerAddrContainerBox'>
-                        <p>   Address : D125/E, Santhosh Colony, K.K Nagar, Chennai - 60078</p>
-                        <p>  Phone No: 9840717144</p>
+                        <p>   Address : D125/E, Santhosh Colony, K.K Nagar, Chennai - 600078</p>
+                        <p>  Phone No: +91-9840717144</p>
+                    </div>
+                    <div className='footerAddrIconContainer'>
+                    <div className='footerAddrIconContainerBox'>
+                            <a href='https://www.instagram.com/woodheadcreative_official/'><FiInstagram /></a>
+                            <a href='https://twitter.com/WoodheadWhc'><TfiTwitter /></a>
+                            <a href='https://www.linkedin.com/company/woodhead-creative/'><FiLinkedin /></a>
+                            <a href='https://www.facebook.com/WoodHeadCreative'><ImFacebook2 /></a>
+
+
+
+
+                        </div>
                     </div>
                 </div>
                 <div className='rightsContainer'>
-                    <p>All rights are reserved</p>
+                    <p>All rights are reserved by Woodhead Creative</p>
                 </div>
             </div>
         </div>

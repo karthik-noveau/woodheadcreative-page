@@ -7,6 +7,7 @@
     padding: 40px 0;
     /* flex-direction: column; */
     width: 100%;
+    margin-top: 41px;
 }
 .newsletterBox {
     display: flex;
@@ -40,11 +41,12 @@
     font-size: 20px;
     margin: 13px 0px;
 }
-.footerAddrContainer{
+.footerAddrContainer {
     display: flex;
     justify-content: center;
     width: 100%;
- 
+    flex-direction: column;
+    align-items: center;
 }
 .footerAddrContainerBox{
     display:flex;
@@ -59,14 +61,34 @@
     justify-content: center;
 }
 .rightsContainer p {
-    border-top: 1px solid #d9d9d9;
+    border-top: 1px solid #afafaf94;
     text-align: center;
     color: white;
-    width: 90%;
-    margin-top: 30px;
-    padding: 20px 0;
+    width: 95%;
+    margin-top: 44px;
+    padding: 33px 0;
 }
-
+.footerAddrIconContainer {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+.footerAddrIconContainerBox {
+    display: flex;
+    justify-content: flex-start;
+    /* padding: 40px 0; */
+    width: 100%;
+    margin-top: 41px;
+    color: white !important;
+}
+.footerAddrIconContainerBox a {
+    color: white;
+    margin-left: 19px;
+    font-size: 22px;
+}
+.footerAddrIconContainerBox a:first-child{
+    margin-left: 0px;
+}
 @media (max-width:769px) {
     .newsletterBox {
         width: 90%;
@@ -77,12 +99,25 @@
     }
     .footerAddrContainerBox {
         width: 90%;
+        font-size: 14px;
     }
     .newsletterContainer {
         padding: 32px 0;
+        margin-top: 20px;
     }
     .newsletterBox input {
         height: 36px;
         font-size: 16px;
     }
+    .footerAddrIconContainerBox {
+        margin-top: 20px;
+    }
+    .footerAddrIconContainer {
+        width: 90%;
+    }
+    .footerAddrIconContainerBox a {
+        margin-left: 15px;
+        font-size: 17px;
+    }
+    
 }
