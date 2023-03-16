@@ -39,9 +39,9 @@ import Footer from '../footer/Footer';
 
 function Home() {
     return (
-        <div>
+        <div id="home">
             <Navbar />
-            <section className='secondNavContainer' id="home">
+            <section className='secondNavContainer' >
                 <div className='secondNavContainerBox'>
                     <marquee direction="left" className='secondNavContainerBox1'>
                         Does your business need more leads or better branding? Avail our offer.
@@ -52,7 +52,7 @@ function Home() {
                 </div>
             </section>
             <section className='HomeHolder'>
-                <div  className='HomeImgContainer HomeBannerImgContainer' >
+                <div className='HomeImgContainer HomeBannerImgContainer' >
                     <img src={HBanner} />
                     <img src={MHBanner} />
                 </div>
@@ -87,9 +87,9 @@ function Home() {
                 <div className='MainTitleContainer'>
                     <h3>TRANSFORMATIONAL CLIENT PROCESS</h3>
                 </div>
-                <div className='HomeImgContainer'  id="services" >
-                    <img src={transformational}  />
-                    <img src={Mtransformational}  />
+                <div className='HomeImgContainer' id="services" >
+                    <img src={transformational} />
+                    <img src={Mtransformational} />
                 </div>
                 <div className='MainTitleContainer' >
                     <h3>SERVICES</h3>
@@ -112,7 +112,7 @@ function Home() {
                             })
                         }
 
-<span id="clients"></span>
+                        <span id="clients"></span>
                     </div>
                 </div>
                 <div className='MainTitleContainer' >
@@ -141,10 +141,10 @@ function Home() {
                 <section className='secondNavDownContainer'>
                     <div className='secondNavDownContainerBox'>
                         <marquee direction="left" className='secondNavDownContainerBox1'>
-                        Know more about our collective here....
+                            Know more about our collective here....
                         </marquee>
-                        <div className='secondNavDownContainerBox2'  id="test">
-                            <a  href="https://firebasestorage.googleapis.com/v0/b/woodheadcreative-c81ba.appspot.com/o/WHC_Deck.pdf?alt=media&token=601b995b-2b02-48a9-9e85-e72115300913" download > <Button variant="contained" style={{ backgroundColor: " #b37402" }}>DOWNLOAD</Button></a>
+                        <div className='secondNavDownContainerBox2' id="test">
+                            <a href="https://firebasestorage.googleapis.com/v0/b/woodheadcreative-c81ba.appspot.com/o/WHC_Deck.pdf?alt=media&token=601b995b-2b02-48a9-9e85-e72115300913" download > <Button variant="contained" style={{ backgroundColor: " #b37402" }}>DOWNLOAD</Button></a>
                         </div>
                     </div>
                 </section>
