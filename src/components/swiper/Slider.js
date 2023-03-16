@@ -57,6 +57,7 @@ export default function Slider(props) {
             )
           })
         }
+        
       </Swiper>
     </>
   );
