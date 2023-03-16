@@ -41,7 +41,7 @@ function Home() {
     return (
         <div>
             <Navbar />
-            <section className='secondNavContainer'>
+            <section className='secondNavContainer' id="home">
                 <div className='secondNavContainerBox'>
                     <marquee direction="left" className='secondNavContainerBox1'>
                         Does your business need more leads or better branding? Avail our offer.
@@ -52,7 +52,7 @@ function Home() {
                 </div>
             </section>
             <section className='HomeHolder'>
-                <div id="home" className='HomeImgContainer HomeBannerImgContainer' >
+                <div  className='HomeImgContainer HomeBannerImgContainer' >
                     <img src={HBanner} />
                     <img src={MHBanner} />
                 </div>
@@ -87,11 +87,11 @@ function Home() {
                 <div className='MainTitleContainer'>
                     <h3>TRANSFORMATIONAL CLIENT PROCESS</h3>
                 </div>
-                <div className='HomeImgContainer' >
-                    <img src={transformational} />
-                    <img src={Mtransformational} />
+                <div className='HomeImgContainer'  id="services" >
+                    <img src={transformational}  />
+                    <img src={Mtransformational}  />
                 </div>
-                <div className='MainTitleContainer' id="services">
+                <div className='MainTitleContainer' >
                     <h3>SERVICES</h3>
                 </div>
                 <div className='serviceContainer'>
@@ -112,10 +112,10 @@ function Home() {
                             })
                         }
 
-
+<span id="clients"></span>
                     </div>
                 </div>
-                <div className='MainTitleContainer' id="clients">
+                <div className='MainTitleContainer' >
                     <h3>CLIENTS</h3>
                 </div>
                 <div className='clientImgContanier' >
@@ -143,12 +143,12 @@ function Home() {
                         <marquee direction="left" className='secondNavDownContainerBox1'>
                         Know more about our collective here....
                         </marquee>
-                        <div className='secondNavDownContainerBox2'>
+                        <div className='secondNavDownContainerBox2'  id="test">
                             <a  href="https://firebasestorage.googleapis.com/v0/b/woodheadcreative-c81ba.appspot.com/o/WHC_Deck.pdf?alt=media&token=601b995b-2b02-48a9-9e85-e72115300913" download > <Button variant="contained" style={{ backgroundColor: " #b37402" }}>DOWNLOAD</Button></a>
                         </div>
                     </div>
                 </section>
-                <div className='MainTitleContainer' id="test">
+                <div className='MainTitleContainer'>
                     <h3>TESTIMONIAL SECTION</h3>
                 </div>
 
