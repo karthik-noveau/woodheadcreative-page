@@ -1,6 +1,9 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.navHolder {
+    height: 75px;
+}
 .navContainer {
     display: flex;
     justify-content: center;
@@ -10,6 +13,7 @@ body{
     z-index: 10;
     left: 0;
     background-color: white;
+    box-shadow: 0 0 6px 2px #abaaaa;
 }
 .navContainerBox {
     display: flex;
