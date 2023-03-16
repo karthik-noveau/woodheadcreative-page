@@ -37,7 +37,7 @@ const data = [
     },
     {
         img: serviceIcon6,
-        title:"Web &amp; App Development",
+        title:"Web App Development",
         text1: "At Woodhead Creative, we specialize in crafting web and app experiences with cutting-edge platform technologies such as React JS, Angular, and Flutter. Our expertise in backend development with tools like Mongo DB ensures seamless integration and scalability for your digital solutions.",
         text2:"E-Commerce website - Catalogue website - Corporate website - News / Magazine website - Supportive maintenance services - Utility mobile appa - Lifestyle mobile apps - Games / Entertainment apps - Productivity apps - Social media apps - News / Information apps"
     }
