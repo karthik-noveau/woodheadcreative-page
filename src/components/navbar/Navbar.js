@@ -19,7 +19,7 @@ function Navbar() {
                     <img src={logo} />
                     <div className='navContainerBoxItem'>
                         <ul>
-                            <li><a href='#home'>HOME</a></li>
+                            <li><a href='#home' >HOME</a></li>
                             <li><a href='#services'>SERVICES</a></li>
                             <li><a href='#clients'>CLIENTS</a></li>
                             <li><a href='#test'>TESTIMONIALS</a></li>
@@ -39,11 +39,55 @@ function Navbar() {
             <div className={sliderClicked ? 'MenuSliderContainerBlock' : 'MenuSliderContainerNone'}>
                 <div className='MenuSliderContainerBox'>
                     <ul>
-                        <li><a href='#home'>HOME</a></li>
-                        <li><a href='#services'>SERVICES</a></li>
-                        <li><a href='#clients'>CLIENTS</a></li>
-                        <li><a href='#test'>TESTIMONIALS</a></li>
-                        <li><a href='#contact'>CONTACT US</a></li>
+                        <li>
+                            <a href='#home' onClick={() => {
+                                setOpen(false)
+                                setSliderClicked(false)
+                            }}
+                            >
+                                HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#services'
+                                onClick={() => {
+                                    setOpen(false)
+                                    setSliderClicked(false)
+                                }}
+                            >
+                                SERVICES
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#clients'
+                                onClick={() => {
+                                    setOpen(false)
+                                    setSliderClicked(false)
+                                }}
+                            >
+                                CLIENTS
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#test'
+                                onClick={() => {
+                                    setOpen(false)
+                                    setSliderClicked(false)
+                                }}
+                            >
+                                TESTIMONIALS
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#contact'
+                                onClick={() => {
+                                    setOpen(false)
+                                    setSliderClicked(false)
+                                }}
+                            >
+                                CONTACT US
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
