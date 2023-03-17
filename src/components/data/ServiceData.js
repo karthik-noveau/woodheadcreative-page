@@ -31,13 +31,13 @@ const data = [
     },
     {
         img: serviceIcon5,
-        title:"Design Video Production",
+        title:"Design and Video Production",
         text1: "Our creative studio specializes in graphic design and video production.Our highly experienced creative team handles all forms of graphic design, and video and animation related production services.",
         text2:"Video Editing - White board animation - Explainer Videos - Motion Posters - Animations - 2D &amp; 3D Animation - Marketing Videos - Social Media Videos - VFXs - Poster Design - Magazine Design - Brochure Design - Newsletters Design - Coffee table books design - Logo design - Short film &amp; Music video editing - Video Production (Storyboarding, pre production, shoot &amp; post production ) - Ad films - Corporate films"
     },
     {
         img: serviceIcon6,
-        title:"Web App Development",
+        title:"Web and App Development",
         text1: "At Woodhead Creative, we specialize in crafting web and app experiences with cutting-edge platform technologies such as React JS, Angular, and Flutter. Our expertise in backend development with tools like Mongo DB ensures seamless integration and scalability for your digital solutions.",
         text2:"E-Commerce website - Catalogue website - Corporate website - News / Magazine website - Supportive maintenance services - Utility mobile appa - Lifestyle mobile apps - Games / Entertainment apps - Productivity apps - Social media apps - News / Information apps"
     }
