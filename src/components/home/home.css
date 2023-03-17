@@ -1,3 +1,6 @@
+body{
+    background-color: #fafbfc;
+}
 .secondNavContainer {
     display: flex;
     width: 100%;
@@ -223,7 +226,7 @@
     left: 50%;
 }
 .HomeBannerImgContainer {
-    margin-top: 145px;
+    margin-top: 0px;
 }
 .footerAddrContainerBox {
     color: #dfdfdf;

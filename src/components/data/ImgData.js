@@ -103,7 +103,7 @@ const ImgData = [
         name: "Krupasagar Sridharan",
         web: "CustomTechnologies Design Lab",
         Linkedin: "https://www.linkedin.com/in/krupasagars/",
-        webLink: "#"
+        webLink: "https://customtechnologies.biz/home/"
     },
     {
         test: test7,

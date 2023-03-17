@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Sling as Hamburger } from 'hamburger-react'
+import Fade from 'react-reveal/Fade';
 //-----css----
 import './navbar.css'
 //----image---
@@ -17,14 +18,26 @@ function Navbar() {
             <div className='navHolder'>
                 <div className='navContainer'>
                     <div className='navContainerBox'>
-                        <img src={logo} />
+                        <Fade top>
+                            <img src={logo} />
+                        </Fade>
                         <div className='navContainerBoxItem'>
                             <ul>
-                                <li><a href='#home' >HOME</a></li>
-                                <li><a href='#services'>SERVICES</a></li>
-                                <li><a href='#clients'>CLIENTS</a></li>
-                                <li><a href='#test'>TESTIMONIALS</a></li>
-                                <li><a href='#contact'>CONTACT US</a></li>
+                                <Fade top>
+                                    <li><a href='#home' >HOME</a></li>
+                                </Fade>
+                                <Fade top>
+                                    <li><a href='#services'>SERVICES</a></li>
+                                </Fade>
+                                <Fade top>
+                                    <li><a href='#clients'>CLIENTS</a></li>
+                                </Fade>
+                                <Fade top>
+                                    <li><a href='#test'>TESTIMONIALS</a></li>
+                                </Fade>
+                                <Fade top>
+                                    <li><a href='#contact'>CONTACT US</a></li>
+                                </Fade>
                             </ul>
                         </div>
                         <div className='MobileNavContainerBoxItem'>
