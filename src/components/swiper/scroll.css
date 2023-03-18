@@ -1,0 +1,23 @@
+.SliderTextConatainerBox {
+  --scrollbarBG: transparent;
+  --thumbBG: #c1c1c1;
+}
+
+.SliderTextConatainerBox::-webkit-scrollbar {
+  width: 7px;
+}
+
+.SliderTextConatainerBox {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.SliderTextConatainerBox::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+
+.SliderTextConatainerBox::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 9px;
+  border: 3px solid var(--scrollbarBG);
+}

@@ -13,8 +13,19 @@
 .SwiperJSContainer {
     position: relative;
 }
-.SliderMainTextConatainerBox{
-    
+.SliderMainTextConatainerBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.SliderMainTextConatainerBox img {
+    width: 90px;
+    border-radius: 50%;
+}
+.SliderMainTextConatainerBox .profileData {
+    margin-left: 20px;
+    color: #35637a;
+    font-weight: 600;
 }
 .SliderTextConatainer {
     position: absolute;
@@ -29,6 +40,7 @@
     overflow: auto;
 }
 
+
 .SliderTextConatainerBox p {
     font-size: 15px;
     margin-bottom: 9px;
@@ -37,7 +49,7 @@
 .SliderIconConatainer {
     margin-top: 14px;
     display: flex;
-    font-size: 21px;
+    font-size: 25px;
     margin-right: 20px;
 }
 

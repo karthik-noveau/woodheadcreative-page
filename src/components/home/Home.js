@@ -25,6 +25,7 @@ import Moffer from '../../images/Moffer.jpg'
 import pdf from '../../images/pdf/WHC_Deck.pdf'
 //------css------
 import './home.css'
+import './scroll.css'
 //------MUI------
 import Button from '@mui/material/Button';
 import Slider from '../swiper/Slider';
@@ -111,11 +112,11 @@ function Home() {
                         <h3>TRANSFORMATIONAL CLIENT PROCESS</h3>
                     </Fade>
                 </div>
-                <div className='HomeImgContainer' id="services" >
+                <div className='HomeImgContainer'>
                     <img src={transformational} />
                     <img src={Mtransformational} />
                 </div>
-                <div className='MainTitleContainer' >
+                <div className='MainTitleContainer'>
                     <Fade bottom>
                         <h3>SERVICES</h3>
                     </Fade>

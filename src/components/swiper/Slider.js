@@ -5,9 +5,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+//----css----
 import './slider.css'
+import './scroll.css'
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+//---icons---
+import profile from '../../images/profile.jpg'
 //icons
 import { GiEarthAmerica } from 'react-icons/gi'
 import { FiLinkedin } from 'react-icons/fi'
@@ -42,8 +46,11 @@ export default function Slider(props) {
                   {/* -----text inside the image ---- */}
                   <div className="SliderTextConatainer">
                     <div className="SliderMainTextConatainerBox" >
-                      <p>{item.position} : {item.name}</p>
-                      <p>{item.web}</p>
+                      <img src={profile} />
+                      <div className="profileData">
+                        <p>{item.position} : {item.name}</p>
+                        <p>{item.web}</p>
+                      </div>
                     </div>
                     <div className="SliderTextConatainerBox" >
                       <p>{item.text1}</p>

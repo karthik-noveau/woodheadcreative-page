@@ -1,0 +1,19 @@
+.serviceContainerBoxItem .textContainer{
+  --scrollbarBG: transparent;
+  --thumbBG: #c1c1c1;
+}
+ .serviceContainerBoxItem .textContainer::-webkit-scrollbar {
+    width:7px;
+  }
+ .serviceContainerBoxItem .textContainer {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+ .serviceContainerBoxItem .textContainer::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+ .serviceContainerBoxItem .textContainer::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 9px;
+    border: 3px solid var(--scrollbarBG);
+  }

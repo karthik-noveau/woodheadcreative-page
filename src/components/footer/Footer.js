@@ -44,9 +44,9 @@ function Footer() {
                         <div className='FooterQuickLinkContainer'>
                             <p>QUICK LINKS</p>
                             <a href="#" >Home</a>
-                            <a href="#" >Services</a>
-                            <a href="#" >Clients</a>
-                            <a href="#" >Testimonials</a>
+                            <a href="#services" >Services</a>
+                            <a href="#clients" >Clients</a>
+                            <a href="#test" >Testimonials</a>
 
                         </div>
                         <div className='FooterQuickContackContainer'>
