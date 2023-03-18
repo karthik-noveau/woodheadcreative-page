@@ -13,7 +13,7 @@ body{
     z-index: 10;
     left: 0;
     background-color: white;
-    box-shadow: 0 0 6px 2px #abaaaa;
+    /* box-shadow: 0 0 6px 2px #abaaaa; */
 }
 .navContainerBox {
     display: flex;
@@ -45,7 +45,7 @@ body{
 .MenuSliderContainerNone{
     display: none;
 }
-a{
+.navHolder a{
     text-decoration: none;
     color: #b37402;
     cursor: pointer;

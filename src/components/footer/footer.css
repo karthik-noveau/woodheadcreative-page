@@ -1,123 +1,277 @@
-.footerHolder{
+.footerHolder {
     background-color: #35637a;
 }
+
 .newsletterContainer {
     display: flex;
     justify-content: center;
     padding: 40px 0;
-    /* flex-direction: column; */
     width: 100%;
     margin-top: 41px;
+    padding-bottom: 25px;
 }
+
 .newsletterBox {
     display: flex;
-    /* height: 46px; */
-    /* align-items: flex-start; */
     flex-direction: column;
-    justify-content: center;
-    width: 70%;
+    justify-content: flex-start;
+    width: 80%;
 }
+
 .newsletterBox Button {
     color: white !important;
     margin-left: 10px;
     width: 160px;
 }
+
 .newsletterBox input {
     border-radius: 5px;
     border: none;
     padding-left: 15px;
-    width: 100%;
-    height: 49px;
+    width: 40%;
+    height: 39px;
     font-size: 17px;
 }
-.newsletterBox input:focus{
-    outline:none;
+
+.newsletterBox input:focus {
+    outline: none;
 }
+
 .newsletterBoxItem {
     display: flex;
 }
+
 .newsletterBox label {
     color: white;
     font-size: 20px;
     margin: 13px 0px;
 }
-.footerAddrContainer {
+
+.FooterLinkContainer {
+    width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.FooterLinkContainerBox {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.FooterLogoContainer {
+    width: 250px;
+    
+}
+
+.FooterLogoContainer img {
+    width: 150px;
+}
+
+.FooterLogoContainer p {
     width: 100%;
-    flex-direction: column;
+    overflow-wrap: break-word;
+    color: #ededed;
+}
+
+.FooterLogoContainerBox {
+    display: flex;
+    margin-top: 18px;
+}
+
+.FooterLogoContainerBox a {
+    color: #35637a;
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    margin: 0;
 }
-.footerAddrContainerBox{
-    display:flex;
+
+.FooterLogoContainerBox .footerLogoIcon:first-child a {
+    font-size: 20px;
+}
+
+.FooterLogoContainerBox .footerLogoIcon {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-left: 12px;
+}
+
+.FooterLogoContainerBox .footerLogoIcon:first-child {
+    margin-left: 0px;
+}
+
+.FooterQuickLinkContainer {
+    width: 100%;
+    max-width: 170px;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 70%;
-    color: white;
+    margin: 15px;
+    margin-top: 50px;
 }
-.rightsContainer {
+
+.FooterQuickLinkContainer a {
+    color: #e1e1e1;
+    text-decoration: none;
+    margin-bottom: 7px;
+}
+
+.FooterQuickLinkContainer p {
+    font-size: 17px;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.FooterQuickContackContainer {
+    width: 100%;
+    max-width: 254px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-top: 50px;
+}
+
+.FooterQuickContackContainer p {
+    color: #e1e1e1;
+    overflow-wrap: break-word;
+    margin-bottom: 7px;
+}
+.FooterQuickContackContainer p:first-child {
+    font-size: 17px;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.FooterAddressContainer {
+    width: 100%;
+    max-width: 170px;
+    display: flex;
+    flex-direction: column;
+    max-width: 254px;
+    margin: 15px;
+    margin-top: 50px;
+}
+
+.FooterAddressContainer p {
+    color: #e1e1e1;
+    margin-bottom: 7px;
+}
+
+.FooterAddressContainer p:first-child {
+    font-size: 17px;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.CopyRightsContainer {
     display: flex;
     width: 100%;
     justify-content: center;
 }
-.rightsContainer p {
+
+.CopyRightsContainer p {
     border-top: 1px solid #afafaf94;
     text-align: center;
     color: white;
-    width: 95%;
+    width: 90%;
     margin-top: 44px;
     padding: 33px 0;
 }
-.footerAddrIconContainer {
-    width: 70%;
-    display: flex;
-    justify-content: center;
-}
-.footerAddrIconContainerBox {
-    display: flex;
-    justify-content: flex-start;
-    /* padding: 40px 0; */
-    width: 100%;
-    margin-top: 41px;
-    color: white !important;
-}
-.footerAddrIconContainerBox a {
-    color: white;
-    margin-left: 19px;
-    font-size: 22px;
-}
-.footerAddrIconContainerBox a:first-child{
-    margin-left: 0px;
-}
+
 @media (max-width:769px) {
+    .newsletterBox {
+        align-items: center;
+    }
     .newsletterBox {
         width: 90%;
     }
+
     .newsletterBox input {
         height: 36px;
         font-size: 15px;
     }
+
     .footerAddrContainerBox {
         width: 90%;
         font-size: 14px;
     }
+
     .newsletterContainer {
         padding: 32px 0;
         margin-top: 20px;
     }
+
     .newsletterBox input {
-        height: 36px;
-        font-size: 16px;
+        height: 32px;
+        font-size: 13px;
+        width: 203px;
     }
-    .footerAddrIconContainerBox {
-        margin-top: 20px;
+    .newsletterBox Button {
+        color: white !important;
+        margin-left: 10px;
+        width: 79px;
+        height: 34px;
+        font-size: 12px;
     }
-    .footerAddrIconContainer {
-        width: 90%;
-    }
-    .footerAddrIconContainerBox a {
-        margin-left: 15px;
+    .newsletterBox label {
+        color: white;
         font-size: 17px;
+        margin: 13px 0px;
     }
-    
+    .FooterLinkContainerBox {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .FooterLogoContainer {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .FooterLogoContainer p {
+        text-align: center;
+    }
+    .FooterQuickLinkContainer p {
+        text-align: center;
+    }
+    .FooterQuickLinkContainer a {
+        text-align: center;
+    }
+    .FooterQuickContackContainer p:first-child {
+        text-align: center;
+    }
+    .FooterQuickContackContainer p {
+        text-align: center;
+    }
+    .FooterAddressContainer p:first-child {
+        text-align: center;
+    }
+    .FooterAddressContainer p {
+        text-align: center;
+    }
+    .FooterQuickLinkContainer {
+        margin-top: 31px;
+    }
+    .FooterQuickContackContainer {
+        margin-top: 30px;
+    }
+    .FooterAddressContainer {
+        margin-top: 30px;
+    }
+
+
 }

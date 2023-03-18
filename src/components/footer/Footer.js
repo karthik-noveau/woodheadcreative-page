@@ -2,13 +2,16 @@ import { Button } from '@mui/material'
 import React from 'react'
 //-----css----
 import './footer.css'
+//-----image-----
+import logo from '../../images/logo.png'
 //-----icons-----
-import {FiInstagram} from 'react-icons/fi'
-import {TfiTwitter} from 'react-icons/tfi'
-import {FiLinkedin }from 'react-icons/fi'
-import {ImFacebook2} from 'react-icons/im'
+import { AiFillInstagram } from 'react-icons/ai'
+import { FaTwitter } from 'react-icons/fa'
+import { TfiLinkedin } from 'react-icons/tfi'
+import { BsFacebook } from 'react-icons/bs'
 
 function Footer() {
+    let year = new Date().getFullYear();
     return (
         <div className='footerHolder' id="contact" >
             <div className='footerHolderContainer'>
@@ -23,26 +26,44 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='footerAddrContainer'>
-                    <div className='footerAddrContainerBox'>
-                        <p>   Address : D125/E, Santhosh Colony, K.K Nagar, Chennai - 600078</p>
-                        <p>  Phone No: +91-9840717144</p>
-                    </div>
-                    <div className='footerAddrIconContainer'>
-                    <div className='footerAddrIconContainerBox'>
-                            <a href='https://www.instagram.com/woodheadcreative_official/'><FiInstagram /></a>
-                            <a href='https://twitter.com/WoodheadWhc'><TfiTwitter /></a>
-                            <a href='https://www.linkedin.com/company/woodhead-creative/'><FiLinkedin /></a>
-                            <a href='https://www.facebook.com/WoodHeadCreative'><ImFacebook2 /></a>
+                <div className='FooterLinkContainer'>
+                    <div className='FooterLinkContainerBox'>
+                        <div className='FooterLogoContainer'>
+                            <img src={logo} />
+                            <p> 
+                                Digital Storytelling and <br></br>Beyond
+                            </p>
+                            <div className='FooterLogoContainerBox'>
+                                
+                               <div className='footerLogoIcon'> <a href='https://www.instagram.com/woodheadcreative_official/'><AiFillInstagram /></a></div>
+                               <div  className='footerLogoIcon'> <a href='https://twitter.com/WoodheadWhc'><FaTwitter /></a></div>
+                               <div  className='footerLogoIcon'> <a href='https://www.linkedin.com/company/woodhead-creative/'><TfiLinkedin /></a></div>
+                               <div  className='footerLogoIcon'> <a href='https://www.facebook.com/WoodHeadCreative'><BsFacebook /></a></div>
+                            </div>
+                        </div>
+                        <div className='FooterQuickLinkContainer'>
+                            <p>QUICK LINKS</p>
+                            <a href="#" >Home</a>
+                            <a href="#" >Services</a>
+                            <a href="#" >Clients</a>
+                            <a href="#" >Testimonials</a>
 
-
-
-
+                        </div>
+                        <div className='FooterQuickContackContainer'>
+                            <p>QUICK CONTACT</p>
+                            <p>Feel free to contact</p>
+                            <p>+91-9840717144</p>
+                            <p>woodheadcreative@gmail.com</p>
+                        </div>
+                        <div className='FooterAddressContainer'>
+                            <p>OUR ADDRESS</p>
+                            <p>WoodHeadCreative</p>
+                            <p>D125/E, Santhosh Colony, K.K Nagar,Chennai - 600078</p>
                         </div>
                     </div>
                 </div>
-                <div className='rightsContainer'>
-                    <p>All rights are reserved by Woodhead Creative</p>
+                <div className='CopyRightsContainer'>
+                    <p>All rights are reserved by Woodhead Creative {year}</p>
                 </div>
             </div>
         </div>

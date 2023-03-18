@@ -112,8 +112,8 @@ function Home() {
                     </Fade>
                 </div>
                 <div className='HomeImgContainer' id="services" >
-                        <img src={transformational} />
-                        <img src={Mtransformational} />
+                    <img src={transformational} />
+                    <img src={Mtransformational} />
                 </div>
                 <div className='MainTitleContainer' >
                     <Fade bottom>
@@ -130,12 +130,16 @@ function Home() {
                                         <Fade bottom>
                                             <p className='headingText'>{item.title}</p>
                                         </Fade>
-                                        <Fade bottom>
-                                            <div className='textContainer'>
+
+                                        <div className='textContainer'>
+                                            <Fade bottom>
                                                 <p>{item.text1}</p>
+                                            </Fade>
+                                            <Fade bottom>
                                                 <p>{item.text2}</p>
-                                            </div>
-                                        </Fade>
+                                            </Fade>
+                                        </div>
+
                                     </div>
                                 )
                             })
@@ -151,13 +155,11 @@ function Home() {
                     </Fade>
                 </div>
                 <div className='clientImgContanier' >
-                    <Fade bottom>
-                        <div className='clientImgContanierBox' >
-                            <img src={client1} />
-                            <img src={client2} />
-                            <img className="clientImgContanierBoxMImg" src={Mclient1} />
-                        </div>
-                    </Fade>
+                    <div className='clientImgContanierBox' >
+                        <img src={client1} />
+                        <img src={client2} />
+                    </div>
+                    <img className="clientImgContanierBoxMImg" src={Mclient1} />
                 </div>
 
                 <div className='MainTitleContainer'>
@@ -172,8 +174,8 @@ function Home() {
                     </Fade>
                 </div>
                 <div className='HomeImgContainer offerWithButtonContainer' id="offer" >
-                        <img src={offer} />
-                        <img src={Moffer} />
+                    <img src={offer} />
+                    <img src={Moffer} />
                     <Fade bottom>
                         <a href='#contact'>  <Button style={{ backgroundColor: "#35637a" }}>CONTACT US</Button></a>
                     </Fade>

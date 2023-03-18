@@ -1,6 +1,9 @@
 body{
     background-color: #fafbfc;
 }
+a{
+    text-decoration: none;
+}
 .secondNavContainer {
     display: flex;
     width: 100%;
@@ -221,9 +224,12 @@ body{
 .offerWithButtonContainer Button {
     color: white;
     position: absolute;
-    bottom: 25px;
+    bottom: 20px;
     font-weight: 700;
-    left: 50%;
+    left: 54%;
+    width: 170px;
+    height: 40px;
+    font-size: 17px;
 }
 .HomeBannerImgContainer {
     margin-top: 0px;
@@ -383,6 +389,11 @@ body{
     .section2ContainerBox11 p {
         font-size: 14px;
         width: 100% !important;
+    }
+    .offerWithButtonContainer Button {
+        left: 50%;
+        width: 90px;
+        height: 26px;
     }
  
 }
