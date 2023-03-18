@@ -14,7 +14,7 @@ import { Fade } from 'react-reveal'
 function Footer() {
     let year = new Date().getFullYear();
     return (
-        <div className='footerHolder' id="contact" >
+        <div className='footerHolder'>
             <div className='footerHolderContainer'>
 
                 <div className='newsletterContainer'>

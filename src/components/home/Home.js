@@ -43,9 +43,9 @@ function Home() {
     return (
         <div id="home">
             <div className='stickyNavbar'>
-            <Navbar />
+                <Navbar />
             </div>
-           
+
 
             <section className='secondNavContainer' >
                 <div className='secondNavContainerBox'>
@@ -204,7 +204,10 @@ function Home() {
 
             </section >
             <Slider ImgData={ImgData} />
-            <Footer />
+            <span id="contact" >
+                <Footer />
+            </span>
+
         </div >
     )
 }
