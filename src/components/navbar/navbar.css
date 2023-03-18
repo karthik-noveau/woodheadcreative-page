@@ -91,7 +91,7 @@ body{
         width: 100%;
         background-color: white;
         z-index: 13;
-        box-shadow: 0px 70px 48px -59px #efefefba;
+        /* box-shadow: 0px 70px 48px -59px #efefefba; */
     }
     .MenuSliderContainerBox ul {
         display: flex;
