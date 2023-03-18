@@ -81,6 +81,7 @@ body{
     }
     .MenuSliderContainerNone{
         display: none;
+        animation: fade-in 1s;
     }
     .MenuSliderContainerBlock {
         display: block;
@@ -90,9 +91,21 @@ body{
         top: 65px;
         width: 100%;
         background-color: white;
-        z-index: 13;
+        z-index: -1;
+        animation: fade-in 1s;
         /* box-shadow: 0px 70px 48px -59px #efefefba; */
     }
+    @keyframes fade-in {
+        0% {
+             opacity: 0;
+             transform: translate(0, -65px)
+        }
+   
+        100% {
+             opacity: 1;
+             transform: translate(0, 0px)
+        }
+   }
     .MenuSliderContainerBox ul {
         display: flex;
         flex-direction: column;
