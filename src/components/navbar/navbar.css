@@ -23,8 +23,9 @@ body{
     justify-content: space-between;
 }
 .navContainerBox img {
-    width: 140px;
+    width: 130px;
     object-fit: cover;
+    margin-top: 0px;
 }
 .navContainerBoxItem ul{
     display: flex;

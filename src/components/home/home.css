@@ -328,7 +328,10 @@ a{
     .section2ContainerBox11 .title {
         right: 0%;
         margin-top: 0;
-        width: 55%;
+        width: 65%;
+    }
+    .section2ContainerBox .textContainer {
+        left: 38%;
     }
     .section2ContainerBox .text1 {
         font-weight: 800;
