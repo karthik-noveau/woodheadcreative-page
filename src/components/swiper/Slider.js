@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import './slider.css'
 import './scroll.css'
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
+import {Pagination, Navigation } from "swiper";
 //---icons---
 import profile from '../../images/profile.jpg'
 //icons
@@ -26,13 +26,13 @@ export default function Slider(props) {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
 
         navigation={true}
-        modules={[Autoplay, Navigation]}
+        modules={[ Navigation]}
         className="SwiperJSContainer"
       >
         {
@@ -48,7 +48,7 @@ export default function Slider(props) {
                     <div className="SliderMainTextConatainerBox" >
                       <img src={profile} />
                       <div className="profileData">
-                        <p>{item.position} : {item.name}</p>
+                        <p>{item.name}</p>
                         <p>{item.web}</p>
                       </div>
                     </div>

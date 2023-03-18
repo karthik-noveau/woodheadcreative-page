@@ -15,7 +15,7 @@
 }
 .SliderMainTextConatainerBox {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 15px;
 }
 .SliderMainTextConatainerBox img {
@@ -122,8 +122,11 @@
 
     /* ------text------- */
     .SliderTextConatainerBox {
-        height: 120px;
+        height: 50px;
         overflow: auto;
+    }
+    .SliderMainTextConatainerBox {
+        margin-bottom: 7px;
     }
     .SliderTextConatainerBox p {
         font-size: 9px;
@@ -134,12 +137,19 @@
         width: 45%;
     }
     .SliderIconConatainer {
-        margin-top: 11px;
-        font-size: 16px;
+        margin-top: 6px;
+        font-size: 12px;
         margin-right: 20px;
     }
     .SliderIconConatainer a:first-child {
-        margin-right: 7px;
+        margin-right: 5px;
+    }
+    .SliderMainTextConatainerBox img {
+        width: 35px;
+    }
+    .SliderMainTextConatainerBox .profileData {
+        margin-left:10px;
+        font-size: 9px;
     }
 
     /*---------- arrow color and size---------- */
