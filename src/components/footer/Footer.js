@@ -9,6 +9,7 @@ import { AiFillInstagram } from 'react-icons/ai'
 import { FaTwitter } from 'react-icons/fa'
 import { TfiLinkedin } from 'react-icons/tfi'
 import { BsFacebook } from 'react-icons/bs'
+import { Fade } from 'react-reveal'
 
 function Footer() {
     let year = new Date().getFullYear();
@@ -19,51 +20,94 @@ function Footer() {
                 <div className='newsletterContainer'>
 
                     <div className='newsletterBox'>
-                        <label>Subscribe to Our Newsletter</label>
+                        <Fade bottom>
+                            <label>Subscribe to Our Newsletter</label>
+                        </Fade>
                         <div className='newsletterBoxItem'>
-                            <input type='email' placeholder='Enter Mail-Id' />
-                            <Button variant='contained' style={{ backgroundColor: "#b37402" }}>Submit</Button>
+                            <Fade bottom>
+                                <input type='email' placeholder='Enter Mail-Id' />
+                            </Fade>
+                            <Fade bottom>
+                                <Button variant='contained' style={{ backgroundColor: "#b37402" }}>Submit</Button>
+                            </Fade>
                         </div>
                     </div>
                 </div>
                 <div className='FooterLinkContainer'>
                     <div className='FooterLinkContainerBox'>
                         <div className='FooterLogoContainer'>
-                            <img src={logo} />
-                            <p> 
-                                Digital Storytelling and <br></br>Beyond
-                            </p>
+                            <Fade bottom>
+                                <img src={logo} />
+                            </Fade>
+                            <Fade bottom>
+                                <p>
+                                    Digital Storytelling and Beyond
+                                </p>
+                            </Fade>
                             <div className='FooterLogoContainerBox'>
-                                
-                               <div className='footerLogoIcon'> <a href='https://www.instagram.com/woodheadcreative_official/'><AiFillInstagram /></a></div>
-                               <div  className='footerLogoIcon'> <a href='https://twitter.com/WoodheadWhc'><FaTwitter /></a></div>
-                               <div  className='footerLogoIcon'> <a href='https://www.linkedin.com/company/woodhead-creative/'><TfiLinkedin /></a></div>
-                               <div  className='footerLogoIcon'> <a href='https://www.facebook.com/WoodHeadCreative'><BsFacebook /></a></div>
+                                <Fade bottom>
+                                    <div className='footerLogoIcon'> <a href='https://www.instagram.com/woodheadcreative_official/'><AiFillInstagram /></a></div>
+                                </Fade>
+                                <Fade bottom>
+                                    <div className='footerLogoIcon'> <a href='https://twitter.com/WoodheadWhc'><FaTwitter /></a></div>
+                                </Fade>
+                                <Fade bottom>
+                                    <div className='footerLogoIcon'> <a href='https://www.linkedin.com/company/woodhead-creative/'><TfiLinkedin /></a></div>
+                                </Fade>
+                                <Fade bottom>
+                                    <div className='footerLogoIcon'> <a href='https://www.facebook.com/WoodHeadCreative'><BsFacebook /></a></div>
+                                </Fade>
                             </div>
                         </div>
                         <div className='FooterQuickLinkContainer'>
-                            <p>QUICK LINKS</p>
-                            <a href="#" >Home</a>
-                            <a href="#services" >Services</a>
-                            <a href="#clients" >Clients</a>
-                            <a href="#test" >Testimonials</a>
+                            <Fade bottom>
+                                <p>QUICK LINKS</p>
+                            </Fade>
+                            <Fade bottom>
+                                <a href="#" >Home</a>
+                            </Fade>
+                            <Fade bottom>
+                                <a href="#services" >Services</a>
+                            </Fade>
+                            <Fade bottom>
+                                <a href="#clients" >Clients</a>
+                            </Fade>
+                            <Fade bottom>
+                                <a href="#test" >Testimonials</a>
+                            </Fade>
 
                         </div>
                         <div className='FooterQuickContackContainer'>
-                            <p>QUICK CONTACT</p>
-                            <p>Feel free to contact</p>
-                            <p>+91-9840717144</p>
-                            <p>woodheadcreative@gmail.com</p>
+                            <Fade bottom>
+                                <p>QUICK CONTACT</p>
+                            </Fade>
+                            <Fade bottom>
+                                <p>Feel free to contact</p>
+                            </Fade>
+                            <Fade bottom>
+                                <p>+91-9840717144</p>
+                            </Fade>
+                            <Fade bottom>
+                                <p>woodheadcreative@gmail.com</p>
+                            </Fade>
                         </div>
                         <div className='FooterAddressContainer'>
-                            <p>OUR ADDRESS</p>
-                            <p>WoodHeadCreative</p>
-                            <p>D125/E, Santhosh Colony, K.K Nagar,Chennai - 600078</p>
+                            <Fade bottom>
+                                <p>OUR ADDRESS</p>
+                            </Fade>
+                            <Fade bottom>
+                                <p>WoodHeadCreative</p>
+                            </Fade>
+                            <Fade bottom>
+                                <p>D125/E, Santhosh Colony, K.K Nagar,Chennai - 600078</p>
+                            </Fade>
                         </div>
                     </div>
                 </div>
                 <div className='CopyRightsContainer'>
-                    <p>All rights are reserved by Woodhead Creative {year}</p>
+                    <Fade bottom>
+                        <p>All rights are reserved by Woodhead Creative {year}</p>
+                    </Fade>
                 </div>
             </div>
         </div>

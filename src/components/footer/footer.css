@@ -62,17 +62,22 @@
 
 .FooterLogoContainer {
     width: 250px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .FooterLogoContainer img {
-    width: 150px;
+    width: 190px;
+    margin-bottom: 15px;
 }
 
 .FooterLogoContainer p {
-    width: 100%;
+    text-align: center;
+    width: 75%;
     overflow-wrap: break-word;
     color: #ededed;
+    font-size: 13px;
 }
 
 .FooterLogoContainerBox {
@@ -211,6 +216,7 @@
     .newsletterContainer {
         padding: 32px 0;
         margin-top: 20px;
+        padding-bottom: 10px;
     }
 
     .newsletterBox input {
@@ -244,6 +250,7 @@
     }
     .FooterLogoContainer p {
         text-align: center;
+        width: 50%;
     }
     .FooterQuickLinkContainer p {
         text-align: center;
@@ -271,6 +278,10 @@
     }
     .FooterAddressContainer {
         margin-top: 30px;
+    }
+    .FooterLogoContainer img {
+        width: 190px;
+        margin-bottom: 15px;
     }
 
 
