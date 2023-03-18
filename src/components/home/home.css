@@ -147,17 +147,28 @@ a{
 .section2Container11 {
     margin-top: 60px;
 }
-
 .MainTitleContainer {
+    height: 169px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.MainTitleContainerBox {
     background-color: #d3d3d3;
-    height: 100px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #b37402;
     font-weight: bold;
+    padding: 18px 0;
+    font-size: 25px;
+}
+.MainTitleContainerBox  h1{
+    width:100%;
     font-size: 33px;
-    margin: 46px 0 46px 0;
 }
 .serviceContainer {
     display: flex;
@@ -352,16 +363,12 @@ a{
         width: 86%;
         margin-left: 6%;
     }
+    .MainTitleContainerBox {
+        padding: 14px 0;
+        font-size: 14px;
+    }
     .MainTitleContainer {
-        background-color: #d3d3d3;
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #b37402;
-        font-weight: bold;
-        font-size: 15px;
-        margin: 20px 0 20px 0;
+        height: 110px;
     }
     .section2Container22 {
         margin-bottom: 57px !important;

@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from '../navbar/Navbar';
 import data from '../data/ServiceData'
 import ImgData from '../data/ImgData'
 import Fade from 'react-reveal/Fade';
+import SideBarForm from '../form-sidebar/SideBarForm'
 //------img------
 import HBanner from '../../images/HBanner.gif'
 import MHBanner from '../../images/MHBanner.gif'
@@ -40,8 +41,14 @@ import Footer from '../footer/Footer';
 
 
 function Home() {
+    const [open, setOpened] = useState(false);
+    const handleClicked = () => {
+        setOpened(!open)
+    }
+
     return (
         <div id="home">
+            <SideBarForm handleClicked={handleClicked} open={open} setOpened={setOpened} />
             <div className='stickyNavbar'>
                 <Navbar />
             </div>
@@ -77,7 +84,7 @@ function Home() {
                     <img src={DBImg} />
                     <img src={MDBImg} />
                     <div className='section2ContainerBox'>
-                        <Fade bottom>
+                        <Fade bottom reset when={true}>
                             <h1 className='title'>DIGITAL STORYTELLING AND BEYOND</h1>
                         </Fade>
                         <div className='textContainer'>
@@ -111,18 +118,22 @@ function Home() {
                     </div>
                 </div>
                 <div className='MainTitleContainer'>
-                    <Fade bottom>
-                        <h3>TRANSFORMATIONAL CLIENT PROCESS</h3>
-                    </Fade>
+                    <div className='MainTitleContainerBox'>
+                        <Fade bottom>
+                            <h3>TRANSFORMATIONAL CLIENT PROCESS</h3>
+                        </Fade>
+                    </div>
                 </div>
                 <div className='HomeImgContainer'>
                     <img src={transformational} />
                     <img src={Mtransformational} />
                 </div>
                 <div className='MainTitleContainer' id="services">
-                    <Fade bottom>
-                        <h3>SERVICES</h3>
-                    </Fade>
+                    <div className='MainTitleContainerBox' id="services">
+                        <Fade bottom>
+                            <h3>SERVICES</h3>
+                        </Fade>
+                    </div>
                 </div>
                 <div className='serviceContainer'>
                     <div className='serviceContainerBox'>
@@ -153,10 +164,12 @@ function Home() {
                     </div>
                 </div>
                 <span id="clients"></span>
-                <div className='MainTitleContainer' >
-                    <Fade bottom>
-                        <h3>CLIENTS</h3>
-                    </Fade>
+                <div className='MainTitleContainer' id="clients">
+                    <div className='MainTitleContainerBox' >
+                        <Fade bottom>
+                            <h3>CLIENTS</h3>
+                        </Fade>
+                    </div>
                 </div>
                 <div className='clientImgContanier' >
                     <div className='clientImgContanierBox' >
@@ -167,9 +180,11 @@ function Home() {
                 </div>
 
                 <div className='MainTitleContainer'>
-                    <Fade bottom>
-                        <h3>OUR COLLABORATIVE PARTNERS</h3>
-                    </Fade>
+                    <div className='MainTitleContainerBox'>
+                        <Fade bottom>
+                            <h3>OUR COLLABORATIVE PARTNERS</h3>
+                        </Fade>
+                    </div>
                 </div>
                 <div className='HomeImgContainer' >
                     <Fade bottom>
@@ -181,7 +196,7 @@ function Home() {
                     <img src={offer} />
                     <img src={Moffer} />
                     <Fade bottom>
-                        <a href='#contact'>  <Button style={{ backgroundColor: "#35637a" }}>CONTACT US</Button></a>
+                        <Button onClick={handleClicked} style={{ backgroundColor: "#35637a" }}>CONTACT US</Button>
                     </Fade>
                 </div>
                 <section className='secondNavDownContainer'>
@@ -196,10 +211,12 @@ function Home() {
                         </div>
                     </div>
                 </section>
-                <div className='MainTitleContainer'>
-                    <Fade bottom>
-                        <h3>TESTIMONIAL SECTION</h3>
-                    </Fade>
+                <div className='MainTitleContainer' id="test">
+                    <div className='MainTitleContainerBox'>
+                        <Fade bottom>
+                            <h3>TESTIMONIAL SECTION</h3>
+                        </Fade>
+                    </div>
                 </div>
 
             </section >

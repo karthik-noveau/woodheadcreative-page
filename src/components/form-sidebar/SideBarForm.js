@@ -11,10 +11,10 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 
-function SideBarForm() {
+function SideBarForm(props) {
     const navigate = useNavigate();
     const [navigateLoad, setNavigateLoad] = useState(false)
-    const [open, setOpened] = useState(false);
+   
 
     const [name, setName] = useState("")
     const [mail, setMail] = useState("")
@@ -22,7 +22,7 @@ function SideBarForm() {
     const [phno, setPhno] = useState("")
     const [quries, setQuries] = useState("")
     const handleClicked = () => {
-        setOpened(!open)
+        props.setOpened(!props.open)
     }
 
     const ButtonClicked = (e) => {
@@ -65,7 +65,7 @@ function SideBarForm() {
             })
         }
 
-        setOpened(false)
+        props.setOpened(false)
 
     }
 
@@ -94,7 +94,7 @@ function SideBarForm() {
                     (
                         <div className='EnquireMainContainerOne'>
                             <div className='EnquireMainContainer'>
-                                <div className='enquireContainer' onClick={handleClicked}>
+                                <div className='enquireContainer' onClick={handleClicked }>
                                     <div className='FormTextContainer'>
                                         <p><FiMail className='mailIcon' /></p>
                                         <p>Contact</p>
@@ -102,7 +102,7 @@ function SideBarForm() {
                                     </div>
                                 </div>
 
-                                <div className={open ? 'enquireFormContainer' : 'falseEnquireFormContainer'}>
+                                <div className={props.open ? 'enquireFormContainer' : 'falseEnquireFormContainer'}>
                                     <form>
                                         <input type='text' name='name' placeholder='Name' id='inputItem' onChange={(e) => { setName(e.target.value) }} />
                                         <input type='number' placeholder='Whatsapp number' id='inputItem' onChange={(e) => { setPhno(e.target.value) }} />
