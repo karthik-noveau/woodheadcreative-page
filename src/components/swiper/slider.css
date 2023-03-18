@@ -13,7 +13,9 @@
 .SwiperJSContainer {
     position: relative;
 }
-
+.SliderMainTextConatainerBox{
+    
+}
 .SliderTextConatainer {
     position: absolute;
     top: 50%;

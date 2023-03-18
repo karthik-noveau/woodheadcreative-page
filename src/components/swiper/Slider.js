@@ -41,14 +41,17 @@ export default function Slider(props) {
                   <img key={index} src={item.Mtest} className="MImg" />
                   {/* -----text inside the image ---- */}
                   <div className="SliderTextConatainer">
+                    <div className="SliderMainTextConatainerBox" >
+                      <p>{item.position} : {item.name}</p>
+                      <p>{item.web}</p>
+                    </div>
                     <div className="SliderTextConatainerBox" >
                       <p>{item.text1}</p>
                       <p>{item.text2}</p>
                       <p>{item.text3}</p>
                       <p>{item.text4}</p>
                       <p>{item.text5}</p>
-                      <p>{item.position} : {item.name}</p>
-                      <p>{item.web}</p>
+
                     </div>
                     <div className="SliderIconConatainer" >
                       <a href={item.Linkedin}><GiEarthAmerica /></a>
