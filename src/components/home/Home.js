@@ -42,7 +42,10 @@ import Footer from '../footer/Footer';
 function Home() {
     return (
         <div id="home">
+            <div className='stickyNavbar'>
             <Navbar />
+            </div>
+           
 
             <section className='secondNavContainer' >
                 <div className='secondNavContainerBox'>
@@ -116,7 +119,7 @@ function Home() {
                     <img src={transformational} />
                     <img src={Mtransformational} />
                 </div>
-                <div className='MainTitleContainer'>
+                <div className='MainTitleContainer' id="services">
                     <Fade bottom>
                         <h3>SERVICES</h3>
                     </Fade>

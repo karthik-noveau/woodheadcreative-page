@@ -4,6 +4,11 @@ body{
 a{
     text-decoration: none;
 }
+.stickyNavbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 .secondNavContainer {
     display: flex;
     width: 100%;
