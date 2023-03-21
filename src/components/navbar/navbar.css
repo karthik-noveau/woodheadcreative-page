@@ -68,14 +68,6 @@ body{
     .MobileNavContainerBoxItem{
         display:block ;
     }
-    #hamburgerMenuIcon{
-    }
-    .MobileNavContainerBoxItem1{
-
-    }
-    .MobileNavContainerBoxItemPeace{
-
-    }
     .MuiDrawer-paperAnchorTop{
         top: 75px !important;
     }

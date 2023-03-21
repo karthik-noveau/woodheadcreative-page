@@ -69,14 +69,14 @@
 
 .FooterLogoContainer img {
     width: 190px;
-    margin-bottom: 15px;
+    margin-bottom:0px;
 }
 
 .FooterLogoContainer p {
     text-align: center;
     width: 75%;
     overflow-wrap: break-word;
-    color: #ededed;
+    color: #b37402;
     font-size: 13px;
 }
 
@@ -281,8 +281,7 @@
     }
     .FooterLogoContainer img {
         width: 190px;
-        margin-bottom: 15px;
+        margin-bottom: 0;
     }
-
 
 }

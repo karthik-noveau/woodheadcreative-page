@@ -61,7 +61,7 @@ function Home() {
                     </marquee>
                     <div className='secondNavContainerBox2'>
                         <Fade bottom>
-                            <a href="#test"> <Button variant="contained" style={{ backgroundColor: " #b37402" }}>CLICK HERE</Button></a>
+                            <a href="#offer"> <Button variant="contained" style={{ backgroundColor: " #b37402" }}>CLICK HERE</Button></a>
                         </Fade>
                     </div>
                 </div>

@@ -3,7 +3,7 @@ import React from 'react'
 //-----css----
 import './footer.css'
 //-----image-----
-import logo from '../../images/logo.png'
+import footerLogo from '../../images/footerLogo.png'
 //-----icons-----
 import { AiFillInstagram } from 'react-icons/ai'
 import { FaTwitter } from 'react-icons/fa'
@@ -37,7 +37,7 @@ function Footer() {
                     <div className='FooterLinkContainerBox'>
                         <div className='FooterLogoContainer'>
                             <Fade bottom>
-                                <img src={logo} />
+                                <img src={footerLogo} />
                             </Fade>
                             <Fade bottom>
                                 <p>
